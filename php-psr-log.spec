@@ -2,9 +2,9 @@
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
 Summary:	Common interface for logging libraries
-Name:		php-psr-Log
+Name:		php-psr-log
 Version:	1.0.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/php-fig/log/archive/%{version}/%{pearname}-%{version}.tar.gz
@@ -13,6 +13,8 @@ URL:		https://github.com/php-fig/log
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
+Provides:	php-psr-Log = %{version}-%{release}
+Obsoletes:	php-psr-Log < 1.0.0-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
