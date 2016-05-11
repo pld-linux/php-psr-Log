@@ -1,4 +1,4 @@
-%define		pearname	Log
+%define		pkgname	log
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
 Summary:	Common interface for logging libraries
@@ -7,7 +7,7 @@ Version:	1.0.0
 Release:	3
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	https://github.com/php-fig/log/archive/%{version}/%{pearname}-%{version}.tar.gz
+Source0:	https://github.com/php-fig/log/archive/%{version}/Log-%{version}.tar.gz
 # Source0-md5:	2499e0aeb6feaabcdd58f335ccdf5b96
 URL:		https://github.com/php-fig/log
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
