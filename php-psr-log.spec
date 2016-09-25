@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Common interface for logging libraries
 Name:		php-psr-log
-Version:	1.0.0
-Release:	3
+Version:	1.0.1
+Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	https://github.com/php-fig/log/archive/%{version}/Log-%{version}.tar.gz
-# Source0-md5:	2499e0aeb6feaabcdd58f335ccdf5b96
+Source0:	https://github.com/php-fig/log/archive/%{version}/psr-log-%{version}.tar.gz
+# Source0-md5:	05c07390eba4c449e430c1c8811aa6d9
 URL:		https://github.com/php-fig/log
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
