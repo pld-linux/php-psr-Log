@@ -1,6 +1,5 @@
 %define		pkgname	log
 %define		php_min_version 5.3.3
-%include	/usr/lib/rpm/macros.php
 Summary:	Common interface for logging libraries
 Name:		php-psr-log
 Version:	1.0.1
