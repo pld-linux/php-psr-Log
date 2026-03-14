@@ -1,13 +1,13 @@
 %define		pkgname	log
-%define		php_min_version 5.3.3
+%define		php_min_version 8.0.0
 Summary:	Common interface for logging libraries
 Name:		php-psr-log
-Version:	1.0.1
+Version:	3.0.2
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/php-fig/log/archive/%{version}/psr-log-%{version}.tar.gz
-# Source0-md5:	05c07390eba4c449e430c1c8811aa6d9
+# Source0-md5:	e1f2bd318a160fc9de69a729bf554093
 URL:		https://github.com/php-fig/log
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
@@ -26,12 +26,10 @@ that describes a logger. See the specification for more details.
 %prep
 %setup -q -n log-%{version}
 
-mv Psr/Log/Test .
-
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_data_dir}
-cp -a Psr $RPM_BUILD_ROOT%{php_data_dir}
+install -d $RPM_BUILD_ROOT%{php_data_dir}/Psr/Log
+cp -a src/*.php $RPM_BUILD_ROOT%{php_data_dir}/Psr/Log
 
 %clean
 rm -rf $RPM_BUILD_ROOT
