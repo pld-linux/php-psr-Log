@@ -3,7 +3,7 @@
 Summary:	Common interface for logging libraries
 Name:		php-psr-log
 Version:	3.0.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/php-fig/log/archive/%{version}/psr-log-%{version}.tar.gz
